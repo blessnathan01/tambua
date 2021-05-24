@@ -77,8 +77,7 @@ $(document).ready(function () {
 
 
 		$.ajax({
-			// url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
-			url: 'http://192.168.43.135:80/webhooks/rest/webhook', //  RASA API
+			url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
 			type: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
