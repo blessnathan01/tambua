@@ -77,14 +77,18 @@ $(document).ready(function () {
 
 
 		$.ajax({
-			url: 'https://tambua.heroku.com/webhooks/rest/webhook', //  RASA API
+			url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
+			// url: 'https://tavio-main-project.herokuapp.com/webhooks/rest/webhook', //  RASA API
 			type: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
 			data: JSON.stringify({
 				"sender": "user", //add the user ID here
-				"message": text
+				"message": text,
+				// "name": "action_welcome_message",
+				// "policy": "MappingPolicy",
+				// "confidence": "0.98723"
 			}),
 			success: function (data, textStatus, xhr) {
 				console.log(data);
@@ -199,3 +203,31 @@ $(document).ready(function () {
 
 
 });
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
