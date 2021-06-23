@@ -3,7 +3,7 @@ $(document).ready(function () {
 	//Widget Code
 	var bot = '<div class="chatCont" id="chatCont">' +
 		'<div class="bot_profile">' +
-		'<img src="logo.png" class="bot_p_img">' +
+		'<img src="logo.png" class="bot_p_img" style="box-shadow: 0px 0px 7px #310065;">' +
 		'<div class="close">' +
 		'<i class="fa fa-times" aria-hidden="true"></i>' +
 		'</div>' +
@@ -22,7 +22,7 @@ $(document).ready(function () {
 		'<div class="profile_div">' +
 		'<div class="row">' +
 		'<div class="col-hgt col-sm-offset-2">' +
-		'<img src="logo.png" class="img-circle img-profile">' +
+		'<img src="logo.png" class="img-circle img-profile" style="box-shadow: 0px 0px 7px #310065;">' +
 		'</div><!--col-hgt end-->' +
 		'<div class="col-hgt">' +
 		'<div class="chat-txt">' +
