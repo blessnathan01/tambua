@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 
 		$.ajax({
-			url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
+			url: 'https://tambua-project.herokuapp.com/webhooks/rest/webhook', //  RASA API
 			// url: 'https://tavio-main-project.herokuapp.com/webhooks/rest/webhook', //  RASA API
 			type: 'POST',
 			headers: {
