@@ -15,7 +15,12 @@ $(document).ready(function () {
 		'<div class="bounce2"></div>' +
 		'<div class="bounce3"></div>' +
 		'</div>' +
-		'<input type="text" id="chat-input" autocomplete="off" placeholder="Anza kuandika hapa..."' + 'class="form-control bot-txt"/>' +
+		'<div class="input-group mb-3">' +
+		  '<input type="text" id="chat-input" autocomplete="off" placeholder="Anza kuandika hapa..."' + 'class="form-control bot-txt"/>' +
+		  '<div class="input-group-append">' +
+		    '<button class="btn" type="button" style="background-color: #310065;margin-top:1px"><i class="fa fa-paper-plane fa-2x" aria-hidden="true" style="color: #fff"></i></button>' +
+		  '</div>' +
+		'</div>' +
 		'</div>' +
 		'</div><!--chatCont end-->' +
 
@@ -31,6 +36,7 @@ $(document).ready(function () {
 		'</div><!--col-hgt end-->' +
 		'</div><!--row end-->' +
 		'</div><!--profile_div end-->';
+		
 
 	$("mybot").html(bot);
 
@@ -71,14 +77,29 @@ $(document).ready(function () {
 		}
 	});
 
+	// on input/text send button--------------------------------------------------------------------------------------
+	$('.btn').click(function (){
+		var text = $("#chat-input").val();
+		if (text == "" || $.trim(text) == '') {
+				e.preventDefault();
+				return false;
+			} else {
+				$("#chat-input").blur();
+				setUserResponse(text);
+				send(text);
+				e.preventDefault();
+				return false;
+			}
+	});
+
 
 	//------------------------------------------- Call the RASA API--------------------------------------
 	function send(text) {
 
 
 		$.ajax({
-			url: 'https://tambua-project.herokuapp.com/webhooks/rest/webhook', //  RASA API
-			// url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
+			url: 'http://localhost:5005/webhooks/rest/webhook', //  RASA API
+			// url: 'https://tavio-project.herokuapp.com/webhooks/rest/webhook', //  RASA API
 			type: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
