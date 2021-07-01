@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Satisfy);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Satisfy);
 
-/* #310065 */
+/* #f9813a */
 /* General */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -36,7 +36,7 @@ img {
 
 #result_div::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #310065;
+  background-color: #f9813a;
 }
 
 
@@ -223,7 +223,7 @@ mybot .resultDiv .botResult:before {
 }
 
 mybot .resultDiv .userEnteredText {
-  background: #310065;
+  background: #f9813a;
   float: right;
   color: #ffffff;
   border-radius: 3px;
@@ -246,7 +246,7 @@ mybot .resultDiv .userEnteredText:before {
   height: 0;
   border-top: 0px solid rgba(0, 0, 0, 0);
   border-bottom: 15px solid rgba(0, 0, 0, 0);
-  border-left: 15px solid #310065;
+  border-left: 15px solid #f9813a;
   position: absolute;
   right: -15px;
   margin-top: -12px;
@@ -285,7 +285,7 @@ mybot .chat-txt {
 
 /* Spinner start */
 mybot .spinner {
-  background: #310065;
+  background: #f9813a;
   width: 70px;
   text-align: center;
   display: none;
@@ -304,7 +304,7 @@ mybot .spinner:before {
   height: 0;
   border-top: 0px solid rgba(0, 0, 0, 0);
   border-bottom: 15px solid rgba(0, 0, 0, 0);
-  border-right: 15px solid #310065;
+  border-right: 15px solid #f9813a;
   left: -15px;
   margin-top: -7px;
 }
@@ -392,7 +392,7 @@ mybot .suggestion:before {
 
 mybot .suggestion .sugg-options {
   display: block;
-  background:#310065;
+  background:#f9813a;
   color: #fff;
   text-align: center;
   padding: 5px;

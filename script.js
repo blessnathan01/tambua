@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
 	//Widget Code
-	var bot = '<div class="chatCont" id="chatCont">' +
+	var bot = '<div class="chatCont" id="chatCont" style="background-color: #fff; border: 1px solid #fed8b1; border-radius: 5px; box-shadow: 0px 0px 7px #f9813a">' +
 		'<div class="bot_profile">' +
-		'<img src="logo.png" class="bot_p_img" style="box-shadow: 0px 0px 7px #310065;">' +
+		'<img src="logo.png" class="bot_p_img" style="box-shadow: 0px 0px 5px #f9813a;">' +
 		'<div class="close">' +
-		'<i class="fa fa-times" aria-hidden="true"></i>' +
+		'<i class="fa fa-times" aria-hidden="true" style="color: orangered;"></i>' +
 		'</div>' +
 		'</div><!--bot_profile end-->' +
 		'<div id="result_div" class="resultDiv"></div>' +
@@ -15,10 +15,10 @@ $(document).ready(function () {
 		'<div class="bounce2"></div>' +
 		'<div class="bounce3"></div>' +
 		'</div>' +
-		'<div class="input-group mb-3">' +
-		  '<input type="text" id="chat-input" autocomplete="off" placeholder="Anza kuandika hapa..."' + 'class="form-control bot-txt"/>' +
+		'<div class="input-group mb-3" style="background-color: #fff; border: 1px solid #fed8b1; border-radius: 5px; box-shadow: 0px 0px 5px #f9813a">' +
+		  '<input type="text" id="chat-input" autocomplete="off" placeholder="Anza kuandika hapa..."' + 'class="form-control bot-txt" style="border: 0px"/>' +
 		  '<div class="input-group-append">' +
-		    '<button class="btn" type="button" style="background-color: #310065;margin-top:1px"><i class="fa fa-paper-plane fa-2x" aria-hidden="true" style="color: #fff"></i></button>' +
+		    '<button class="btn" type="button" style="background-color: #fff;margin-top:15px; margin-right: 10px"><i class="fa fa-paper-plane" aria-hidden="true" style="color: #f9813a; font-size: 1.5rem;"></i></button>' +
 		  '</div>' +
 		'</div>' +
 		'</div>' +
@@ -27,7 +27,7 @@ $(document).ready(function () {
 		'<div class="profile_div">' +
 		'<div class="row">' +
 		'<div class="col-hgt col-sm-offset-2">' +
-		'<img src="logo.png" class="img-circle img-profile" style="box-shadow: 0px 0px 7px #310065;">' +
+		'<img src="logo.png" class="img-circle img-profile" style="box-shadow: 0px 0px 20px #f9813a;">' +
 		'</div><!--col-hgt end-->' +
 		'<div class="col-hgt">' +
 		'<div class="chat-txt">' +
@@ -36,7 +36,7 @@ $(document).ready(function () {
 		'</div><!--col-hgt end-->' +
 		'</div><!--row end-->' +
 		'</div><!--profile_div end-->';
-		
+
 
 	$("mybot").html(bot);
 
